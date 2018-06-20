@@ -4,7 +4,7 @@ Web Push Test
 ## 1. Get repository
 
 ```bash
-$ git clone https://github.com/Korilakkuma/web-push-example.git
+$ git clone https://github.com/an1106na/web-push-example.git
 ```
 
 ## 2. Install npm modules
