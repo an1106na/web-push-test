@@ -1,0 +1,31 @@
+{
+  "env": {
+    "es6": true,
+    "node": true
+  },
+  "rules": {
+    "strict": "off",
+    "indent": [
+      "error",
+      2
+    ],
+    "no-console": 0,
+    "no-unused-vars": [
+      "error",
+      {
+        "args": "none"
+      }
+    ],
+    "arrow-body-style": ["error", "always"],
+    "no-underscore-dangle": 0,
+    "import/no-extraneous-dependencies": 0,
+    "no-useless-concat": "off",
+    "prefer-destructuring": "off",
+    "class-methods-use-this": "off"
+  },
+  "globals": {
+    "describe"   : false,
+    "it"         : false,
+    "before"     : false
+  }
+}

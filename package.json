@@ -1,0 +1,27 @@
+{
+  "name": "web-push-test",
+  "version": "0.0.0",
+  "description": "Web Push Test",
+  "main": "server.js",
+  "scripts": {
+    "lint": "eslint server.js public/*.js",
+    "start": "npm run lint && node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/an1106na/web-push-test.git"
+  },
+  "author": "an1106na <alv.vnl.xx@gmail.com>",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "web-push": "^3.2.2"
+  },
+  "devDependencies": {
+    "eslint": "^4.19.0",
+    "eslint-cli": "^1.1.1",
+    "eslint-plugin-import": "^2.9.0",
+    "stylelint": "^8.0.0",
+    "stylelint-config-standard": "^17.0.0"
+  }
+}
