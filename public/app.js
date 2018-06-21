@@ -1,7 +1,7 @@
 'use strict';
 
-const urlsafeBase64ToBinary = (urlsafeBase64) => {
-  const base64 = urlsafeBase64.replace(/-/g, '+').replace(/_/g, '/');
+const encodeBase64URL = (encodeBase64) => {
+  const base64 = encodeBase64.replace(/-/g, '+').replace(/_/g, '/');
 
   const raw    = window.atob(base64);
   const binary = new Uint8Array(raw.length);
@@ -39,7 +39,7 @@ const subscribeWebPush = () => {
       .then((res) => {
         return registration.pushManager.subscribe({
           userVisibleOnly     : true,
-          applicationServerKey: urlsafeBase64ToBinary(res.publicKey)
+          applicationServerKey: encodeBase64URL(res.publicKey)
         });
       }).catch((error) => {
         console.dir(error);

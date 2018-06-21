@@ -2,8 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <title>Web Push Example</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+    <title>Web Push Test</title>
     <link rel="stylesheet" href="./app.css" type="text/css" media="all" />
 </head>
 
@@ -12,13 +11,13 @@
     <div class="WebPush">
         <form method="post" action="/api/webpush/subscribe">
             <dl>
-                <dt><label for="text-title">Title</label></dt>
+                <dt><label for="text-title">:title</label></dt>
                 <dd><input type="text" id="text-title" name="text-title" /></dd>
-                <dt><label for="text-body">Body</label></dt>
+                <dt><label for="text-body">:body</label></dt>
                 <dd><input type="text" id="text-body" name="text-body" /></dd>
-                <dt><label for="url-icon">Icon</label></dt>
+                <dt><label for="url-icon">:icon</label></dt>
                 <dd><input type="url" id="url-icon" name="url-icon" /></dd>
-                <dt><label for="url-link">Link</label></dt>
+                <dt><label for="url-link">:link</label></dt>
                 <dd><input type="url" id="url-link" name="url-link" /></dd>
             </dl>
             <ul>
@@ -26,7 +25,7 @@
                 <li><input type="hidden" id="hidden-auth" name="hidden-auth" value="" /></li>
                 <li><input type="hidden" id="hidden-p256dh" name="hidden-p256dh" value="" /></li>
             </ul>
-            <button type="submit">Web Push</button>
+            <button type="submit">Push Message</button>
         </form>
     </div>
     <script type="text/javascript" src="./app.js"></script>
